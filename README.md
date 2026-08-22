@@ -1,0 +1,2 @@
+# legacy.smp
+mc server
