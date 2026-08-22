@@ -2,61 +2,182 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Legacy SMP</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #111;
-      color: #eee;
+      font-family: Arial, sans-serif;
+      background: #111318;
+      color: #f4f4f4;
+      line-height: 1.6;
     }
+
     header {
-      background: #6a0dad;
-      padding: 2rem;
+      padding: 4rem 1rem;
       text-align: center;
+      background: linear-gradient(135deg, #201046, #522494);
+      border-bottom: 4px solid #a970ff;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: clamp(2.4rem, 8vw, 4.8rem);
+      letter-spacing: 0.08em;
     }
+
+    header p {
+      margin: 0.8rem 0 0;
+      color: #e2ccff;
+      font-size: 1.15rem;
+    }
+
     main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      width: min(100% - 2rem, 1000px);
+      margin: 2.5rem auto 4rem;
     }
+
+    section {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: #1b1f28;
+      border: 1px solid #313848;
+      border-radius: 12px;
+    }
+
     h2 {
-      color: #d18fff;
+      margin-top: 0;
+      color: #c99bff;
+      font-size: 1.7rem;
     }
-    a {
-      color: #d18fff;
+
+    code {
+      padding: 0.25rem 0.5rem;
+      border-radius: 5px;
+      background: #0d0f14;
+      color: #9ee493;
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+    }
+
+    li {
+      margin: 0.45rem 0;
+    }
+
+    .discord-button {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.85rem 1.2rem;
+      border-radius: 8px;
+      background: #5865f2;
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .discord-button:hover {
+      background: #4752c4;
+      transform: translateY(-2px);
+    }
+
+    .world-map {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border: 3px solid #8d62cc;
+      border-radius: 10px;
+    }
+
+    .map-caption {
+      margin: 0.75rem 0 0;
+      color: #b5bdc9;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      padding: 1.5rem;
+      color: #aeb5c0;
+      text-align: center;
+      border-top: 1px solid #313848;
+      background: #0d0f14;
     }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>Legacy SMP</h1>
+    <h1>LEGACY SMP</h1>
+    <p>Een Minecraft-server met geschiedenis, avontuur en een eigen wereld.</p>
   </header>
 
   <main>
-    <h2>Welkom op onze Minecraft SMP</h2>
-    <p>Dit is de info-pagina voor onze server.</p>
+    <section>
+      <h2>Welkom</h2>
+      <p>
+        Welkom op de officiële website van Legacy SMP. Hier vind je serverinformatie,
+        de regels, onze Discord en een kaart van de wereld.
+      </p>
+    </section>
 
-    <h3>Server IP</h3>
-    <p><code>deze server is invite only</code></p>
+    <section>
+      <h2>Serverinformatie</h2>
+      <p>Server-IP: <code>VUL-HIER-JE-SERVER-IP-IN</code></p>
+      <p>Versie: <code>VUL-HIER-JE-MINECRAFT-VERSIE-IN</code></p>
+    </section>
 
-    <h3>Regels</h3>
-    <ul>
-      <li>niet griefen</li>
-      <li>Geen cheats</li>
-      <li>Respecteer andere spelers</li>
-    </ul>
+    <section>
+      <h2>Regels</h2>
+      <ul>
+        <li>Geen griefing of stelen.</li>
+        <li>Geen hacks, cheats of x-ray.</li>
+        <li>Respecteer andere spelers en staff.</li>
+        <li>Geen ongepaste bouwwerken of berichten.</li>
+        <li>Gebruik gezond verstand en heb plezier.</li>
+      </ul>
+    </section>
 
-    <h3>Links</h3>
-    <ul>
-      <li><a href="https://discord.gg/Ptq4PXDtnf" target="_blank">Discord</a></li>
-      <li><a href="#">Download pack</a></li>
-    </ul>
+    <section>
+      <h2>Discord</h2>
+      <p>Join de Discord voor nieuws, gesprekken en serverupdates.</p>
+      <a
+        class="discord-button"
+        href="https://discord.gg/Ptq4PXDtnf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Join onze Discord
+      </a>
+    </section>
+
+    <section>
+      <h2>Wereldkaart</h2>
+      <p>Een overzicht van de Legacy SMP-wereld.</p>
+
+      <img
+        src="image.jpg"
+        alt="Kaart van de Legacy SMP Minecraft-wereld"
+        class="world-map"
+      />
+
+      <p class="map-caption">
+        Legacy SMP — wereldkaart
+      </p>
+    </section>
   </main>
+
+  <footer>
+    © 2026 Legacy SMP
+  </footer>
 </body>
 </html>
